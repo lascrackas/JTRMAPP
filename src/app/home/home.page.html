@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+
+  <div *ngIf="userEmail.length>0" id="container">
+    <p  style="font-size: 32px;">Bienvenue {{userEmail}}</p>
+
+    <p>
+      <button style="background-color: black; padding: 10px; border-radius: 4px;margin-top: 10px;color: white;" (click)="signout()">Deconnexion</button>
+    </p>
+    </div>
+
+    <div *ngIf="userEmail.length===0">
+      <p style="text-align: center;">Chargement...</p>
+    </div>
+</ion-content>

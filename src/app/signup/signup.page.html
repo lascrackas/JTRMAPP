@@ -1,0 +1,35 @@
+<ion-content>
+
+  <h1 style="text-align: center;">JTRM - INSCRIPTION</h1>
+
+  <form [formGroup]="signupForm">
+    <p class="formInputP">
+      <input class="formInput" formControlName="email" type="email" placeholder="email">
+    </p>
+
+    <p class="formInputP">
+      <input class="formInput" formControlName="password" type="password" placeholder="Mot de passe">
+    </p>
+
+    <p class="formInputP">
+      <input class="formInput" formControlName="firstName" type="text" placeholder="Prenom">
+    </p>
+
+    <p class="formInputP">
+      <input class="formInput" formControlName="lastName" type="text" placeholder="Nom">
+    </p>
+
+    <p class="formInputP">
+      <input class="formInput" formControlName="phoneNumber" type="text" placeholder="Numero de telephone">
+    </p>
+    
+    
+
+
+    <p style="text-align:center;">
+
+      <button style="margin-right: 4px;font-size: 13px;" (click)="call()" expand="block">S'inscrire</button>
+      <button style="background-color: green;font-size:13px" (click)="goToLogin()" expand="block">Connexion</button>
+    </p>
+  </form>
+</ion-content>

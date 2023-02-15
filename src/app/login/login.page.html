@@ -1,0 +1,21 @@
+<ion-content>
+
+  <h1 style="text-align: center;">JTRM - CONNEXION</h1>
+
+  <form [formGroup]="loginForm">
+    <p class="formInputP">
+      <input class="formInput" formControlName="email" type="email" placeholder="email">
+    </p>
+
+    <p class="formInputP">
+      <input class="formInput" formControlName="password" type="password" placeholder="Mot de passe">
+    </p>
+    
+
+    <p style="text-align:center;">
+
+      <button style="background-color: rgb(17, 129, 17); margin-right: 5px;font-size: 13px;" (click)="login()" expand="block">Connexion</button>
+      <button style="margin-right: 4px;font-size: 13px;" (click)="goToSignup()" expand="block">S'inscrire</button>
+    </p>
+  </form>
+</ion-content>

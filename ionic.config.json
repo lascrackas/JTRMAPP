@@ -1,0 +1,7 @@
+{
+  "name": "jhinterimapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
